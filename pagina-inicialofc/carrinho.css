@@ -1,0 +1,124 @@
+/* Fonte */
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Container principal */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Seção do carrinho */
+.carrinho {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.carrinho h2 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+/* Cabeçalho do carrinho */
+.carrinho-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    font-weight: 700;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Item do carrinho */
+.item-carrinho {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Detalhes do produto */
+.produto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.produto img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+}
+
+.detalhes p {
+    margin: 0;
+}
+
+.categoria {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Resumo do carrinho */
+.resumo {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fdf5e6;
+}
+
+.resumo h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: darkgoldenrod;
+}
+
+.resumo p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.total-final {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.resumo button {
+    width: 100%;
+    background-color: darkgoldenrod;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.resumo button:hover {
+    background-color: gold;
+}

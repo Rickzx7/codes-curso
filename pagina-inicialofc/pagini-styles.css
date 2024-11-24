@@ -1,0 +1,352 @@
+/* AJUSTANDO SITE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* PARTE DE CIMA/ CABEÇALHO */
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    /* Espaçamento entre os itens do menu/ space beetween*/
+    align-items: center;
+    /* Alinha os itens de forma vertical */
+    padding: 0 5%;
+    height: 85px;
+}
+
+/*no geral essa parte foi tranquila, eu estava apenas ajustando o site e adicionando responsividade. O problema mesmo começa depois...*/
+
+.menu-lado-esquerdo img {
+    max-height: 150px;
+    /*definindo largura maxima da img*/
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    /* Links em linha */
+    gap: 20px;
+    /* Espaçamento entre os links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+    color: goldenrod;
+}
+
+.menu-lado-direito {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Espaçamento entre os elementos */
+}
+
+.icon-avatar img {
+    width: 40px;
+    border-radius: 50%;
+    /*deixando o avatar redondo pra ficar bonito KKKKKKK  */
+}
+
+.linha {
+    height: 1px;
+    background-color: #ddd;
+    width: 90%;
+    align-self: center;
+}
+
+/* AREA DOS BANNERS, AQUI COMEÇA O INFERNO... */
+.banner {
+    display: flex;
+    /* alinhando os produtos na horizontal (quero meu java de volta) */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Itens irão reorganizam em telas miudas */
+    padding: 2rem 5%;
+}
+
+.banner-texto {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.banner-texto h2 {
+    font-size: 2.5rem;
+    color: hsl(219, 9%, 20%);
+    margin-bottom: 1rem;
+}
+
+.banner-texto p span{
+    color: goldenrod;
+}
+
+.banner-texto p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.banner-texto h2 p span{
+    color: goldenrod;
+    background-color: gold;
+}
+
+.banner-texto button {
+    background-color: darkgoldenrod;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.banner-texto button:hover {
+    background-color: goldenrod;
+}
+
+.banner-imagem img {
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.banner-imagem img:hover{
+    transform: scale(1.08);
+}
+
+/* hora dos produtos (Não aguento mais. Juliano começa a dar aulas de java pfvr, eu não nasci para esse negocio de front end não)  */
+.produtos {
+    padding: 2rem 5%;
+    background-color: #f8f9fa;
+}
+
+.produtos h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: hsl(219, 9%, 20%);
+}
+
+.grade-de-produtos {
+    display: grid;
+    /* grid dos produtos */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Ajusta as colunas*/
+    gap: 2rem;
+}
+
+.cartao-produto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cartao-produto:hover {
+    transform: scale(1.05);
+    /* Efeito de zoom no hover/ quase um alto relevo quando passa o mouse encima */
+}
+
+.cartao-produto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.cartao-produto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: hsl(219, 9%, 25%);
+}
+
+.cartao-produto p {
+    font-weight: bold;
+    color: darkgoldenrod;
+    margin-bottom: 1rem;
+}
+
+.cartao-produto button {
+    background-color: darkgoldenrod;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cartao-produto button:hover {
+    background-color: goldenrod;
+}
+
+.titulo-section-promo{
+    text-align: center;
+    margin-top: 5fr;
+    font-size: 1.8rem;
+}
+
+.barra-underline{
+    width: 100px;
+    height: 5px;
+    background-color: darkgoldenrod;
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+}
+
+
+.colum.coluna-4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.produto-promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 250px; /* Define largura fixa para os produtos do site */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.produto-promo:hover {
+    transform: scale(1.05); /* Adiciona um zoom suave dms zzz */
+    background-color: #fef6e4;
+}
+
+.produto-promo img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.produto-promo h3 {
+    font-size: 1.2rem;
+    color: hsl(219, 9%, 25%);
+    margin-bottom: 0.5rem;
+}
+
+.produto-promo p {
+    font-weight: bold;
+    color: darkgoldenrod;
+    margin-bottom: 1rem;
+}
+
+/* Botoes "ver detalhes " produtos*/
+.produto-promo button {
+    background-color: darkgoldenrod;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.produto-promo button:hover {
+    background-color: goldenrod;
+}
+
+/* Inicio do footer (estou delirando ja vitor - 01:23am) */
+footer {
+    background-color: hsl(219, 9%, 20%);
+    color: white;
+    padding: 2rem 5%;
+    margin-top: 2rem;
+}
+
+.footer-conteudo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+.footer-links h4,
+.footer-contato h4,
+.footer-redes h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: goldenrod;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+}
+
+.footer-links ul li a:hover {
+    color: goldenrod;
+}
+
+.footer-contato p {
+    margin: 0.5rem 0;
+}
+
+.footer-redes .redes-sociais a img {
+    width: 32px;
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+
+.footer-redes .redes-sociais a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-rodape {
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: hsl(219, 9%, 60%);
+}
+
+/* formatação responsiva para o site */
+@media (max-width: 768px) {
+    .banner-texto h2 {
+        font-size: 2rem;
+    }
+
+    .banner-imagem img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px
